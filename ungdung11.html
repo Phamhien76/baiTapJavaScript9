@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1 = +prompt('nhập số 1:');
+        let number2 = +prompt('nhập số 1:');
+        let number3 = +prompt('nhập số 1:');
+
+        //  max=(number1>number2)? number1:number2;
+        //  max=(max>number3)? max:number3;
+        // dùng 1 dòng lệnh để tìm max
+        let max= number1, min=number1;
+
+        max= (max < number2)?number2:(max<number3)?number3:max;
+        min=(min>number2)? number2:(min<number3)? number3:min         
+
+        // if (number1 <= number2 && number1 <=number3 );
+        // else if (number1 <= number3 && number1 <=number3 );
+        // if (number1 <= number2 && number1 <=number3 );
+
+        alert('số lớn nhất trong 3 số là: '+max)
+    </script>
+</body>
+</html>

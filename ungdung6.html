@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let maSinhVien=prompt('nhập mã sinh viên: ');
+        let tenSinhVien=prompt('Nhập tên sinh viên: ');
+        let age=prompt('nhập tuổi: ');
+        let diemHtml= parseInt (prompt('nhập điểm Html: '));
+        let diemCss= parseInt(prompt('nhập điểm Css:'));
+        let diemjavascript= parseInt(prompt('nhập điểm Js: '));
+
+        diemtrungbinh=(diemHtml+diemCss+diemjavascript)/3;
+        document.write("Thông tin của bạn là: " +maSinhVien, tenSinhVien, age, diemtrungbinh);
+    </script>
+</body>
+</html>
